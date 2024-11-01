@@ -1,0 +1,19 @@
+{
+    "name": "gratien/urubutopay",
+    "description": "a wordpress plugin for urubuto payment gateway",
+    "require": {
+        "firebase/php-jwt": "^6.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Gratien\\Urubutopay\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "gratien",
+            "email": "gracian2020@gmail.com"
+        }
+    ]
+}

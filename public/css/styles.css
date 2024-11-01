@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+
+:root {
+    --upg-label-color: rgb(153, 153, 153);
+    --upg-primary-color: #3e61ac;
+    --upg-border-input-color: #e5e7eb;
+    --upg-success-color: #3AC722;
+    --upg-failed-color: #ff0000;
+    --upg-font-family: 'Quicksand', sans-serif;
+}
+
+
+input,
+button,
+a {
+    outline: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.upg-products {
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+
+.upg-products .upg-list-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    list-style-type: none;
+}
+
+.upg-products .upg-product-item {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+.upg-products .upg-product-item a {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.upg-products .upg-product-image {
+    height: 200px;
+    width: 100%;
+}
+
+.upg-product-image img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100% !important;
+    object-fit: cover;
+    max-width: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.upg-product-small-detail {
+    padding: 30px;
+}
+
+.upg-product-small-detail .upg-list-product-title {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.upg-product-small-detail .upg-list-product-price {
+    text-transform: uppercase;
+}
+
+.upg-single-product-buy-button-wrapper {
+    position: relative;
+}
+
+.upg-single-product-buy-button-wrapper .upg-single-product-buy-button {
+    outline: none;
+    border: none;
+    background: var(--upg-primary-color) !important;
+    color: white !important;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.upg-single-product-buy-button-wrapper .upg-single-product-buy-button:hover {
+    background: var(--upg-primary-color);
+    border: none;
+    color: white;
+}
+
+/**
+payment modal urubuto pay
+**/
+button {
+    outline: none !important;
+}
+
+.upg-hidden {
+    display: none;
+}
+
+.upg-block {
+    display: block;
+}
+
+.upg-modal {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0 !important;
+    background-color: #00000080;
+    font-family: 'Quicksand', sans-serif;
+    z-index: 999;
+    height: 100vh;
+    max-width: 100% !important;
+}
+
+.upg-modal-container {
+    width: 450px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.upg-modal-container .upg-modal-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--upg-border-input-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.upg-modal-header .upg-modal-header-title {
+    font-weight: bold;
+}
+
+.upg-close-modal {
+    border-radius: 100%;
+    background: rgb(153 153 153 / 19%) !important;
+    border: none !important;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.upg-close-modal img {
+    width: 15px !important;
+    height: 15px !important;
+    object-fit: cover;
+}
+
+.upg-modal-container .upg-modal-body {
+    padding: 20px;
+}
+
+.upg-form-group {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.up-form input {
+    width: 100%;
+    display: block;
+    height: 38px;
+    border-radius: 5px !important;
+    outline: none;
+    border: 1px solid var(--upg-border-input-color) !important;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.up-form label {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: var(--upg-label-color);
+    font-weight: bold;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+
+.upg-form-payment-mode {
+    display: flex;
+}
+
+.upg-form-payment-mode .upg-form-payment-mode-btn {
+    outline: none;
+    border: none;
+    background: white !important;
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.upg-form-payment-mode-btn:hover {
+    border: 2px solid var(--upg-label-color);
+}
+
+.upg-active-payment-mode-btn {
+    border: 2px solid var(--upg-label-color) !important;
+}
+
+.upg-form-send-btn {
+    height: 40px !important;
+    background: var(--upg-primary-color) !important;
+    color: white !important;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-transform: capitalize !important;
+}
+
+.upg-hidden {
+    display: none;
+}
+
+.upg-show {
+    display: block;
+}
+
+.upg-btn-loader {
+    width: 35px !important;
+    height: 35px !important;
+}
+
+/** check transaction **/
+.upg-check-transaction-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upg-check-transaction-modal .upg-check-transaction-loader-image {
+    padding: 2px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upg-check-transaction-modal .upg-check-transaction-loader-image img {
+    width: 80px;
+}
+
+.upg-check-transaction-modal .upg-check-transaction-content {
+    text-align: center;
+    width: 95%;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.upg-check-transaction-modal .upg-check-transaction-content--primary {
+    color: var(--upg-primary-color);
+}
+
+.upg-check-transaction-modal .upg-check-transaction-content--success {
+    color: var(--upg-success-color);
+}
+
+.upg-check-transaction-modal .upg-check-transaction-content--failed {
+    color: var(--upg-failed-color);
+}
+
+.upg-check-transaction-modal .upg-check-transaction-modal-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: #dddddd !important;
+    border: none;
+    color: black;
+}
+
+.upg-check-transaction-modal-close-btn img {
+    width: 15px !important;
+    height: 15px !important;
+    object-fit: cover;
+}
+
+/** upg-input-error **/
+.upg-input-error {
+    font-size: 12px;
+    color: var(--upg-failed-color);
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+.upg-alert-danger {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff2f0;
+    border: 1px solid #ffccc7;
+}
+
+/*shortcode product embed*/
+.upg-shortcode-product-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 450px;
+    margin: auto !important;
+    background: white !important;
+    font-family: var(--upg-font-family) !important;
+}
+
+.upg-shortcode-product-item .upg-shortcode-product-item--image {
+    position: relative;
+}
+
+.upg-shortcode-product-item--image img {
+    width: 100%;
+    min-height: 110px !important;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.upg-shortcode-product-item .upg-shortcode-product-item--description {
+    position: relative;
+}
+
+.upg-shortcode-product-item--description .upg-shortcode-product-item--description--title {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.upg-shortcode-product-item--description .upg-shortcode-product-item--description--price {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.upg-shortcode-product-item--description--button {
+    position: relative;
+}
+
+.upg-shortcode-product-item--description--button a {
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+.upg-shortcode-product-item--description--button button {
+    outline: none;
+    border: none;
+    color: white !important;
+    background-color: var(--upg-primary-color) !important;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.upg-shortcode-product-item--description--button button:hover {
+    font-weight: bold;
+    animation: buy-now-animation 0.2s ease-in-out;
+}
+
+@keyframes buy-now-animation {
+    from {
+        margin-top: 10px;
+    }
+
+    to {
+        margin-top: 8px;
+    }
+}
